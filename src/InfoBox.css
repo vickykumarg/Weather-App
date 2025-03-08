@@ -1,0 +1,110 @@
+
+.InfoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+    
+  }
+  
+  .Card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .Card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .CardMedia {
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+
+  }
+  
+  .CardMedia:hover {
+    opacity: 0.9;
+  }
+  
+  .CardContent {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .Typography h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .Typography p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .Icon {
+    font-size: 2rem;
+    color: #ff5722;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .CardMedia {
+      height: 150px;
+    }
+  
+    .Typography h5 {
+      font-size: 1.2rem;
+    }
+  
+    .Typography p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .CardMedia {
+      height: 120px;
+    }
+  
+    .Typography h5 {
+      font-size: 1rem;
+    }
+  
+    .Typography p {
+      font-size: 0.8rem;
+    }
+  }
+
+

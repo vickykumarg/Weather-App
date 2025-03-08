@@ -1,0 +1,16 @@
+ 
+/* App.css */
+.App {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Optional: Light background color */
+  padding: 20px; /* Optional: Add some padding */
+  box-sizing: border-box; /* Ensure padding is included in height/width */
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

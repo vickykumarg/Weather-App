@@ -1,0 +1,125 @@
+/* .Weather{
+    margin-left:450px;
+} */
+
+
+/* WeatherApp.css */
+.WeatherApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+  }
+  
+  .WeatherAppContent {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%; 
+    max-width: 600px; 
+  }
+  
+  .WeatherTitle {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideDown 0.5s ease-in-out;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  .search-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Info box with background image */
+  .InfoBox {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .WeatherAppContent {
+      padding: 15px;
+      width: 85%; /* Adjust width for smaller screens */
+    }
+  
+    .WeatherTitle {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .WeatherAppContent {
+      padding: 10px;
+      width: 90%; /* Adjust width for very small screens */
+    }
+  
+    .WeatherTitle {
+      font-size: 1.5rem;
+    }
+  }
+
+
